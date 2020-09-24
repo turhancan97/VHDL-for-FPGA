@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc question4_ucf.ucf -p xc3s250e-cp132-5 question4_top_module.ngc question4_top_module.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o question4_top_module_map.ncd question4_top_module.ngd question4_top_module.pcf 
+par -w -intstyle ise -ol high -t 1 question4_top_module_map.ncd question4_top_module.ncd question4_top_module.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml question4_top_module.twx question4_top_module.ncd -o question4_top_module.twr question4_top_module.pcf -ucf question4_ucf.ucf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc question4_ucf.ucf -p xc3s250e-cp132-5 question4_top_module.ngc question4_top_module.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o question4_top_module_map.ncd question4_top_module.ngd question4_top_module.pcf 
+par -w -intstyle ise -ol high -t 1 question4_top_module_map.ncd question4_top_module.ncd question4_top_module.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml question4_top_module.twx question4_top_module.ncd -o question4_top_module.twr question4_top_module.pcf -ucf question4_ucf.ucf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.syr" 

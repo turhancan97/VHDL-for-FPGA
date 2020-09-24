@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question4/four_bit_operation_register.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question4/four_bit_operation_register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 four_bit_operation_register.ngc four_bit_operation_register.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o four_bit_operation_register_map.ncd four_bit_operation_register.ngd four_bit_operation_register.pcf 
+par -w -intstyle ise -ol high -t 1 four_bit_operation_register_map.ncd four_bit_operation_register.ncd four_bit_operation_register.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml four_bit_operation_register.twx four_bit_operation_register.ncd -o four_bit_operation_register.twr four_bit_operation_register.pcf 

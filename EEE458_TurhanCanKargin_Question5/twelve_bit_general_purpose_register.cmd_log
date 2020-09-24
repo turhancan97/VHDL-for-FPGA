@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question5/twelve_bit_general_purpose_register.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question5/twelve_bit_general_purpose_register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 twelve_bit_general_purpose_register.ngc twelve_bit_general_purpose_register.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o twelve_bit_general_purpose_register_map.ncd twelve_bit_general_purpose_register.ngd twelve_bit_general_purpose_register.pcf 
+par -w -intstyle ise -ol high -t 1 twelve_bit_general_purpose_register_map.ncd twelve_bit_general_purpose_register.ncd twelve_bit_general_purpose_register.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml twelve_bit_general_purpose_register.twx twelve_bit_general_purpose_register.ncd -o twelve_bit_general_purpose_register.twr twelve_bit_general_purpose_register.pcf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question5/twelve_bit_general_purpose_register.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question5/twelve_bit_general_purpose_register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 twelve_bit_general_purpose_register.ngc twelve_bit_general_purpose_register.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o twelve_bit_general_purpose_register_map.ncd twelve_bit_general_purpose_register.ngd twelve_bit_general_purpose_register.pcf 
+par -w -intstyle ise -ol high -t 1 twelve_bit_general_purpose_register_map.ncd twelve_bit_general_purpose_register.ncd twelve_bit_general_purpose_register.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml twelve_bit_general_purpose_register.twx twelve_bit_general_purpose_register.ncd -o twelve_bit_general_purpose_register.twr twelve_bit_general_purpose_register.pcf 
+bitgen -intstyle ise -f twelve_bit_general_purpose_register.ut twelve_bit_general_purpose_register.ncd 

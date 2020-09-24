@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 arithmetic_logic_unit.ngc arithmetic_logic_unit.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ngd arithmetic_logic_unit.pcf 
+par -w -intstyle ise -ol high -t 1 arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ncd arithmetic_logic_unit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml arithmetic_logic_unit.twx arithmetic_logic_unit.ncd -o arithmetic_logic_unit.twr arithmetic_logic_unit.pcf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 arithmetic_logic_unit.ngc arithmetic_logic_unit.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ngd arithmetic_logic_unit.pcf 
+par -w -intstyle ise -ol high -t 1 arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ncd arithmetic_logic_unit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml arithmetic_logic_unit.twx arithmetic_logic_unit.ncd -o arithmetic_logic_unit.twr arithmetic_logic_unit.pcf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 arithmetic_logic_unit.ngc arithmetic_logic_unit.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ngd arithmetic_logic_unit.pcf 
+par -w -intstyle ise -ol high -t 1 arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ncd arithmetic_logic_unit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml arithmetic_logic_unit.twx arithmetic_logic_unit.ncd -o arithmetic_logic_unit.twr arithmetic_logic_unit.pcf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 arithmetic_logic_unit.ngc arithmetic_logic_unit.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ngd arithmetic_logic_unit.pcf 
+par -w -intstyle ise -ol high -t 1 arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ncd arithmetic_logic_unit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml arithmetic_logic_unit.twx arithmetic_logic_unit.ncd -o arithmetic_logic_unit.twr arithmetic_logic_unit.pcf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.syr" 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 arithmetic_logic_unit.ngc arithmetic_logic_unit.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ngd arithmetic_logic_unit.pcf 
+par -w -intstyle ise -ol high -t 1 arithmetic_logic_unit_map.ncd arithmetic_logic_unit.ncd arithmetic_logic_unit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml arithmetic_logic_unit.twx arithmetic_logic_unit.ncd -o arithmetic_logic_unit.twr arithmetic_logic_unit.pcf 

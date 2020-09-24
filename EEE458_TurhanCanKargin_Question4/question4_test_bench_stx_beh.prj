@@ -1,0 +1,2 @@
+vhdl isim_temp "four_bit_operation_register.vhd"
+vhdl isim_temp "question4_test_bench.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGA\EEE458_TurhanCanKargin_Question5\twelve_bit_general_purpose_register.ncd
+OUTFILE=D:\FPGA\EEE458_TurhanCanKargin_Question5\twelve_bit_general_purpose_register.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5cp132
+WORKINGDIR=D:\FPGA\EEE458_TurhanCanKargin_Question5
+LICENSE=WebPack
+USER_INFO=211894722_0_0_258

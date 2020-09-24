@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 twelve_bit_memory.ngc twelve_bit_memory.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o twelve_bit_memory_map.ncd twelve_bit_memory.ngd twelve_bit_memory.pcf 
+par -w -intstyle ise -ol high -t 1 twelve_bit_memory_map.ncd twelve_bit_memory.ncd twelve_bit_memory.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml twelve_bit_memory.twx twelve_bit_memory.ncd -o twelve_bit_memory.twr twelve_bit_memory.pcf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 twelve_bit_memory.ngc twelve_bit_memory.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o twelve_bit_memory_map.ncd twelve_bit_memory.ngd twelve_bit_memory.pcf 
+par -w -intstyle ise -ol high -t 1 twelve_bit_memory_map.ncd twelve_bit_memory.ncd twelve_bit_memory.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml twelve_bit_memory.twx twelve_bit_memory.ncd -o twelve_bit_memory.twr twelve_bit_memory.pcf 

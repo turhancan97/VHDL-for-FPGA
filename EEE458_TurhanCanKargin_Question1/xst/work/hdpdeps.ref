@@ -1,0 +1,16 @@
+V3 7
+FL D:/FPGA/EEE458_TurhanCanKargin_Question1/eight_bit_register.vhd 2020/05/01.18:32:11 P.20131013
+EN work/eight_bit_register 1588347201 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question1/eight_bit_register.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/eight_bit_register/Behavioral 1588347202 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question1/eight_bit_register.vhd \
+      EN work/eight_bit_register 1588347201
+FL D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.vhd 2020/05/01.18:33:18 P.20131013
+EN work/question1_top_module 1588347203 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/question1_top_module/Behavioral 1588347204 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.vhd \
+      EN work/question1_top_module 1588347203 CP eight_bit_register

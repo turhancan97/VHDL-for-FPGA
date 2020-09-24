@@ -1,0 +1,12 @@
+V3 3
+FL D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.vhd 2020/05/01.19:09:55 P.20131013
+EN work/arithmetic_logic_unit 1588349470 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_BIT 1381692180 \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/STD_LOGIC_SIGNED 1381692178 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/MATH_REAL 1381692182 \
+      PB ieee/MATH_COMPLEX 1381692183
+AR work/arithmetic_logic_unit/behavioral 1588349471 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question6/arithmetic_logic_unit.vhd \
+      EN work/arithmetic_logic_unit 1588349470

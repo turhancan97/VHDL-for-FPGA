@@ -1,0 +1,9 @@
+V3 3
+FL D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.vhd 2020/05/01.18:42:51 P.20131013
+EN work/twelve_bit_memory 1588347807 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/twelve_bit_memory/Behavioral 1588347808 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.vhd \
+      EN work/twelve_bit_memory 1588347807

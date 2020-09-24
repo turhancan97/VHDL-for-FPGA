@@ -1,0 +1,29 @@
+Command line:
+   eight_bit_memory_address_register_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51554
+
+Fri May 01 16:51:06 2020
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5160.61 Meg
+
+ Total Signals          : 7
+ Total Nets             : 28
+ Total Signal Drivers   : 1
+ Total Blocks           : 4
+ Total Primitive Blocks : 4
+ Total Processes        : 1
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 406
+Total Line Count : 5
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5160.61 Meg
+
+Fri May 01 16:51:17 2020
+

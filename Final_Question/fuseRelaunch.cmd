@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/FPGA/Final_Question/testbench_isim_beh.exe" -prj "D:/FPGA/Final_Question/testbench_beh.prj" "work.testbench" 

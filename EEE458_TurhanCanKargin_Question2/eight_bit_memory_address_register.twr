@@ -1,0 +1,95 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\FPGA\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml eight_bit_memory_address_register.twx
+eight_bit_memory_address_register.ncd -o eight_bit_memory_address_register.twr
+eight_bit_memory_address_register.pcf
+
+Design file:              eight_bit_memory_address_register.ncd
+Physical constraint file: eight_bit_memory_address_register.pcf
+Device,package,speed:     xc3s250e,cp132,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+data1<0>    |    1.558(R)|   -0.054(R)|clk_BUFGP         |   0.000|
+data1<1>    |    1.502(R)|   -0.013(R)|clk_BUFGP         |   0.000|
+data1<2>    |    2.065(R)|   -0.463(R)|clk_BUFGP         |   0.000|
+data1<3>    |    2.034(R)|   -0.435(R)|clk_BUFGP         |   0.000|
+data1<4>    |    1.895(R)|   -0.325(R)|clk_BUFGP         |   0.000|
+data1<5>    |    1.266(R)|    0.174(R)|clk_BUFGP         |   0.000|
+data1<6>    |    1.862(R)|   -0.297(R)|clk_BUFGP         |   0.000|
+data1<7>    |    1.610(R)|   -0.099(R)|clk_BUFGP         |   0.000|
+data2<0>    |    1.639(R)|   -0.118(R)|clk_BUFGP         |   0.000|
+data2<1>    |    1.926(R)|   -0.352(R)|clk_BUFGP         |   0.000|
+data2<2>    |    2.017(R)|   -0.424(R)|clk_BUFGP         |   0.000|
+data2<3>    |    1.940(R)|   -0.359(R)|clk_BUFGP         |   0.000|
+data2<4>    |    1.518(R)|   -0.024(R)|clk_BUFGP         |   0.000|
+data2<5>    |    1.128(R)|    0.284(R)|clk_BUFGP         |   0.000|
+data2<6>    |    1.390(R)|    0.080(R)|clk_BUFGP         |   0.000|
+data2<7>    |    1.326(R)|    0.128(R)|clk_BUFGP         |   0.000|
+load1       |    4.062(R)|   -0.242(R)|clk_BUFGP         |   0.000|
+load2       |    2.485(R)|   -0.028(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+----------------+------------+------------------+--------+
+                | clk (edge) |                  | Clock  |
+Destination     |   to PAD   |Internal Clock(s) | Phase  |
+----------------+------------+------------------+--------+
+AddressOutput<0>|    5.557(R)|clk_BUFGP         |   0.000|
+AddressOutput<1>|    5.546(R)|clk_BUFGP         |   0.000|
+AddressOutput<2>|    5.546(R)|clk_BUFGP         |   0.000|
+AddressOutput<3>|    5.558(R)|clk_BUFGP         |   0.000|
+AddressOutput<4>|    5.551(R)|clk_BUFGP         |   0.000|
+AddressOutput<5>|    5.537(R)|clk_BUFGP         |   0.000|
+AddressOutput<6>|    5.557(R)|clk_BUFGP         |   0.000|
+AddressOutput<7>|    5.541(R)|clk_BUFGP         |   0.000|
+----------------+------------+------------------+--------+
+
+
+Analysis completed Fri May 01 15:01:13 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4494 MB
+
+
+

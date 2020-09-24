@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question2_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question4/question2_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc question4_ucf.ucf -p xc3s250e-cp132-5 question2_top_module.ngc question2_top_module.ngd  

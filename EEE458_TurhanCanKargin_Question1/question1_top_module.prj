@@ -1,0 +1,2 @@
+vhdl work "eight_bit_register.vhd"
+vhdl work "question1_top_module.vhd"

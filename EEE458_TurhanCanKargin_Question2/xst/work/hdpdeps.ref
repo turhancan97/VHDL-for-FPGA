@@ -1,0 +1,16 @@
+V3 7
+FL D:/FPGA/EEE458_TurhanCanKargin_Question2/eight_bit_memory_address_register.vhd 2020/05/01.18:37:29 P.20131013
+EN work/eight_bit_memory_address_register 1588347479 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question2/eight_bit_memory_address_register.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/eight_bit_memory_address_register/Behavioral 1588347480 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question2/eight_bit_memory_address_register.vhd \
+      EN work/eight_bit_memory_address_register 1588347479
+FL D:/FPGA/EEE458_TurhanCanKargin_Question2/question2_top_module.vhd 2020/05/01.18:37:29 P.20131013
+EN work/question2_top_module 1588347481 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question2/question2_top_module.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/question2_top_module/Behavioral 1588347482 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question2/question2_top_module.vhd \
+      EN work/question2_top_module 1588347481 \
+      CP eight_bit_memory_address_register

@@ -1,0 +1,2 @@
+vhdl work "four_bit_operation_register.vhd"
+vhdl work "question4_test_bench.vhd"

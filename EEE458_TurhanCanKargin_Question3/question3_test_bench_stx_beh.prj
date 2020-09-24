@@ -1,0 +1,2 @@
+vhdl isim_temp "twelve_bit_memory.vhd"
+vhdl isim_temp "question3_test_bench.vhd"

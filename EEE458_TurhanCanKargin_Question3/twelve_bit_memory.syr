@@ -1,0 +1,396 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: twelve_bit_memory.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "twelve_bit_memory.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "twelve_bit_memory"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-cp132
+
+---- Source Options
+Top Module Name                    : twelve_bit_memory
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.vhd" in Library work.
+Entity <twelve_bit_memory> compiled.
+Entity <twelve_bit_memory> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <twelve_bit_memory> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <twelve_bit_memory> in library <work> (Architecture <behavioral>).
+Entity <twelve_bit_memory> analyzed. Unit <twelve_bit_memory> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <twelve_bit_memory>.
+    Related source file is "D:/FPGA/EEE458_TurhanCanKargin_Question3/twelve_bit_memory.vhd".
+    Found 256x12-bit single-port RAM <Mram_memory_array> for signal <memory_array>.
+    Found 12-bit register for signal <MemoryData>.
+    Found 8-bit up counter for signal <MemoryAddress>.
+    Found 12-bit register for signal <a>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Counter(s).
+	inferred  24 D-type flip-flop(s).
+Unit <twelve_bit_memory> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x12-bit single-port RAM                            : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 2
+ 12-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <twelve_bit_memory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_memory_array> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 12-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <write_in_0>    | high     |
+    |     addrA          | connected to signal <MemoryAddress> |          |
+    |     diA            | connected to signal <a>             |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <twelve_bit_memory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x12-bit single-port distributed RAM                : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <twelve_bit_memory> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block twelve_bit_memory, actual ratio is 5.
+FlipFlop MemoryAddress_0 has been replicated 23 time(s)
+FlipFlop MemoryAddress_1 has been replicated 23 time(s)
+FlipFlop MemoryAddress_2 has been replicated 23 time(s)
+FlipFlop MemoryAddress_3 has been replicated 23 time(s)
+FlipFlop MemoryAddress_4 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 128
+ Flip-Flops                                            : 128
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : twelve_bit_memory.ngr
+Top Level Output File Name         : twelve_bit_memory
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 35
+
+Cell Usage :
+# BELS                             : 119
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 7
+#      LUT2                        : 2
+#      LUT3                        : 48
+#      LUT4                        : 8
+#      MUXCY                       : 7
+#      MUXF5                       : 24
+#      MUXF6                       : 12
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 128
+#      FDE                         : 128
+# RAMS                             : 96
+#      RAM32X1S                    : 96
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 34
+#      IBUF                        : 2
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-5 
+
+ Number of Slices:                      134  out of   2448     5%  
+ Number of Slice Flip Flops:            128  out of   4896     2%  
+ Number of 4 input LUTs:                258  out of   4896     5%  
+    Number used as logic:                66
+    Number used as RAMs:                192
+ Number of IOs:                          35
+ Number of bonded IOBs:                  35  out of     92    38%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 224   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.473ns (Maximum Frequency: 223.570MHz)
+   Minimum input arrival time before clock: 4.960ns
+   Maximum output required time after clock: 4.763ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.473ns (frequency: 223.570MHz)
+  Total number of paths / destination ports: 2470 / 800
+-------------------------------------------------------------------------
+Delay:               4.473ns (Levels of Logic = 4)
+  Source:            MemoryAddress_0_23 (FF)
+  Destination:       a_4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: MemoryAddress_0_23 to a_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             32   0.514   1.073  MemoryAddress_0_23 (MemoryAddress_0_23)
+     RAM32X1S:A0->O        1   0.890   0.387  Mram_memory_array34 (N76)
+     LUT3:I2->O            1   0.612   0.000  inst_LPM_MUX4_6 (inst_LPM_MUX4_6)
+     MUXF5:I0->O           1   0.278   0.000  inst_LPM_MUX4_4_f5 (inst_LPM_MUX4_4_f5)
+     MUXF6:I0->O           2   0.451   0.000  inst_LPM_MUX4_2_f6 (_varindex0000<4>)
+     FDE:D                     0.268          a_4
+    ----------------------------------------
+    Total                      4.473ns (3.013ns logic, 1.460ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 448 / 224
+-------------------------------------------------------------------------
+Offset:              4.960ns (Levels of Logic = 3)
+  Source:            read_in (PAD)
+  Destination:       Mram_memory_array1 (RAM)
+  Destination Clock: clk rising
+
+  Data Path: read_in to Mram_memory_array1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.532  read_in_IBUF (read_in_IBUF)
+     LUT2:I0->O           20   0.612   0.940  write_in_01 (write_in_0)
+     LUT4:I3->O           12   0.612   0.817  write_ctrl (write_ctrl)
+     RAM32X1S:WE               0.341          Mram_memory_array1
+    ----------------------------------------
+    Total                      4.960ns (2.671ns logic, 2.289ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.763ns (Levels of Logic = 1)
+  Source:            MemoryAddress_5 (FF)
+  Destination:       MemoryAddress<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: MemoryAddress_5 to MemoryAddress<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             58   0.514   1.080  MemoryAddress_5 (MemoryAddress_5)
+     OBUF:I->O                 3.169          MemoryAddress_5_OBUF (MemoryAddress<5>)
+    ----------------------------------------
+    Total                      4.763ns (3.683ns logic, 1.080ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.07 secs
+ 
+--> 
+
+Total memory usage is 4523968 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,9 @@
+V3 3
+FL D:/FPGA/EEE458_TurhanCanKargin_Question5/twelve_bit_general_purpose_register.vhd 2020/05/01.18:51:57 P.20131013
+EN work/twelve_bit_general_purpose_register 1588348348 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question5/twelve_bit_general_purpose_register.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/twelve_bit_general_purpose_register/Behavioral 1588348349 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question5/twelve_bit_general_purpose_register.vhd \
+      EN work/twelve_bit_general_purpose_register 1588348348

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.syr" 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc question1_UCF.ucf -p xc3s250e-cp132-5 question1_top_module.ngc question1_top_module.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o question1_top_module_map.ncd question1_top_module.ngd question1_top_module.pcf 
+par -w -intstyle ise -ol high -t 1 question1_top_module_map.ncd question1_top_module.ncd question1_top_module.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml question1_top_module.twx question1_top_module.ncd -o question1_top_module.twr question1_top_module.pcf -ucf question1_UCF.ucf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc question1_UCF.ucf -p xc3s250e-cp132-5 question1_top_module.ngc question1_top_module.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o question1_top_module_map.ncd question1_top_module.ngd question1_top_module.pcf 
+par -w -intstyle ise -ol high -t 1 question1_top_module_map.ncd question1_top_module.ncd question1_top_module.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml question1_top_module.twx question1_top_module.ncd -o question1_top_module.twr question1_top_module.pcf -ucf question1_UCF.ucf 
+xst -intstyle ise -ifn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.xst" -ofn "D:/FPGA/EEE458_TurhanCanKargin_Question1/question1_top_module.syr" 

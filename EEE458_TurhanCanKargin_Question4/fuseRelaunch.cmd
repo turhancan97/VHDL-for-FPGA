@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_test_bench_isim_beh.exe" -prj "D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_test_bench_beh.prj" "work.question4_test_bench" 

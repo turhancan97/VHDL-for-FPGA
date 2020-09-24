@@ -1,0 +1,4 @@
+EN question2_top_module NULL D:/FPGA/EEE458_TurhanCanKargin_Question2/question2_top_module.vhd sub00/vhpl02 1588347481
+EN eight_bit_memory_address_register NULL D:/FPGA/EEE458_TurhanCanKargin_Question2/eight_bit_memory_address_register.vhd sub00/vhpl00 1588347479
+AR question2_top_module behavioral D:/FPGA/EEE458_TurhanCanKargin_Question2/question2_top_module.vhd sub00/vhpl03 1588347482
+AR eight_bit_memory_address_register behavioral D:/FPGA/EEE458_TurhanCanKargin_Question2/eight_bit_memory_address_register.vhd sub00/vhpl01 1588347480

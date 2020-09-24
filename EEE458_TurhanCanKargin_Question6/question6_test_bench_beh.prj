@@ -1,0 +1,2 @@
+vhdl work "arithmetic_logic_unit.vhd"
+vhdl work "question6_test_bench.vhd"

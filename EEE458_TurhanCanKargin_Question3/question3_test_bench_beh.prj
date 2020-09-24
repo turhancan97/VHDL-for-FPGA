@@ -1,0 +1,2 @@
+vhdl work "twelve_bit_memory.vhd"
+vhdl work "question3_test_bench.vhd"

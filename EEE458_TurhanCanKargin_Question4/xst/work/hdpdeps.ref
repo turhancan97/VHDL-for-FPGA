@@ -1,0 +1,16 @@
+V3 7
+FL D:/FPGA/EEE458_TurhanCanKargin_Question4/four_bit_operation_register.vhd 2020/05/01.18:48:59 P.20131013
+EN work/four_bit_operation_register 1588348141 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question4/four_bit_operation_register.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/four_bit_operation_register/Behavioral 1588348142 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question4/four_bit_operation_register.vhd \
+      EN work/four_bit_operation_register 1588348141
+FL D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.vhd 2020/05/01.18:46:55 P.20131013
+EN work/question4_top_module 1588348143 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/question4_top_module/Behavioral 1588348144 \
+      FL D:/FPGA/EEE458_TurhanCanKargin_Question4/question4_top_module.vhd \
+      EN work/question4_top_module 1588348143 CP four_bit_operation_register
